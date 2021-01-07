@@ -1,7 +1,7 @@
 {
-  "name": "supply-chain-E",
+  "name": "und-project3",
   "version": "1.0.0",
-  "description": "",
+  "description": "The write-up part of this project consists of the following elements:\r - UML diagrams\r - Libraries\r - IPFS",
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
@@ -12,5 +12,8 @@
   "license": "MIT",
   "devDependencies": {
     "lite-server": "2.4.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }

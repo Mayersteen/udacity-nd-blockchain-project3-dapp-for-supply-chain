@@ -56,7 +56,7 @@ This diagram illustrates the contract structure and dependencies, as well as att
 ![](./UML/class-diagram.png)
 
 ## Libraries
-The following libraries and versions are used in this project:
+No additional libraries were used to implement this project.
 
 ## IPFS
 The InterPlanetary File-System provides the ability to host our web application in a fully decentralized way. 

@@ -44,6 +44,7 @@ This diagram illustrates the contract structure and dependencies, as well as att
 The following libraries and versions are used in this project:
 
 ## IPFS
+The InterPlanetary File-System provides the ability to host our web application in a fully decentralized way. 
 
 ## General information
 - contract address in Rinkeby: 
@@ -53,3 +54,10 @@ The following libraries and versions are used in this project:
 - Web3.js version : v1.2.9
 
 ## How to use?
+
+- Clone this repository
+```git clone <URL>```
+
+- Install the dependencies
+```npm install truffle-hdwallet-provider --save```
+```npm install```

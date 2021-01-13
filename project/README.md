@@ -22,20 +22,22 @@ The _Farmer_ is responsible to grow the plants and the process starts once the c
 \
 The _Distributor_ **buy**s coffee from the _Farmer_ and then **ship**s the goods to the _Retailer_.\
 \
-The _Retailer_ gets coffee from the _Distributor_ and puts the goods for sale, so that the _Customer_s can **purchase** the coffee.
+The _Retailer_ **receive**s coffee from the _Distributor_ and puts the goods for sale, so that the _Customer_s can **purchase** the coffee.
 
 ![](./UML/activity-diagram.png)
 
 ### Sequence Diagram
+This diagram illustrates the function call orders. The _blue_ parts are not implemented explicitly, but were mentioned in the project documentation.
 
 ![](./UML/sequence-diagram.png)
 
 ### State Diagram
+This diagram modells the interactions between Actors, the involved methods and required pre-conditions, as well as the States.
 
 ![](./UML/state-diagram.png)
 
 ### Class Diagram
-
+This diagram illustrates the contract structure and dependencies, as well as attributes and methods.
 ![](./UML/class-diagram.png)
 
 ## Libraries

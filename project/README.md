@@ -1,5 +1,20 @@
-# Ethereum Dapp for Tracking Items on a Supply Chain
+# General information
+- contract address in Rinkeby:
+```0x0```
+- Node version    : v14.15.1
+- Solidity version: ^0.4.24 (solc-js)
+- Truffle version : v5.1.59 (core: 5.1.59)
+- Web3.js version : v1.2.9
+## How to use?
 
+- Clone this repository
+```git clone <URL>```
+
+- Install the dependencies
+```switch into the ./project directory```
+```npm install```
+
+# Ethereum Dapp for Tracking Items on a Supply Chain
 The write-up part of this project consists of the following elements:
 - UML diagrams
 - Libraries
@@ -45,19 +60,3 @@ The following libraries and versions are used in this project:
 
 ## IPFS
 The InterPlanetary File-System provides the ability to host our web application in a fully decentralized way. 
-
-## General information
-- contract address in Rinkeby: 
-- Node version    : v14.15.1
-- Solidity version: ^0.4.24 (solc-js)
-- Truffle version : v5.1.59 (core: 5.1.59)
-- Web3.js version : v1.2.9
-
-## How to use?
-
-- Clone this repository
-```git clone <URL>```
-
-- Install the dependencies
-```npm install truffle-hdwallet-provider --save```
-```npm install```

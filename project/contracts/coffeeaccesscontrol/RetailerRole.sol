@@ -27,7 +27,7 @@ contract RetailerRole {
 
   // Define a function 'isRetailer' to check this role
   function isRetailer(address account) public view returns (bool) {
-    return retailers.has(address);
+    return retailers.has(account);
   }
 
   // Define a function 'addRetailer' that adds this role
@@ -37,7 +37,7 @@ contract RetailerRole {
 
   // Define a function 'renounceRetailer' to renounce this role
   function renounceRetailer() public {
-    _removeRetailer(account);
+    _removeRetailer(msg.sender);
   }
 
   // Define an internal function '_addRetailer' to add this role, called by 'addRetailer'

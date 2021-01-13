@@ -1,7 +1,7 @@
 pragma solidity ^0.4.24;
 // Define a contract 'Supplychain'
 
-import "../coffecore/Ownable.sol";
+import "../coffeecore/Ownable.sol";
 import "../coffeeaccesscontrol/FarmerRole.sol";
 import "../coffeeaccesscontrol/DistributorRole.sol";
 import "../coffeeaccesscontrol/RetailerRole.sol";
@@ -153,10 +153,8 @@ contract SupplyChain {
   }
 
   // Define a function 'kill' if required
-  function kill() public {
-    if (msg.sender == owner) {
-      selfdestruct(owner);
-    }
+  function kill() public onlyOwner {
+    selfdestruct(owner);
   }
 
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'

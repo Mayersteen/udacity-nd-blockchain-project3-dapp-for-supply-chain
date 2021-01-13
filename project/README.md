@@ -1,4 +1,13 @@
-# General information
+# Ethereum Dapp for Tracking Items on a Supply Chain
+The write-up part of this project consists of the following elements:
+- UML diagrams
+- Libraries
+- IPFS
+
+**Disclaimer:**
+In order to focus on the asks, I will not include steps in the different implementations that are not explicity requested. For example, If a product could not be validated successfully, it would not progress further down the process chain. The basic assumption is that everything is _just fine_ and that every participant is somehow _pre validated_. Therefore the overall process would not be used in a real world scenario, the way it is implemented for this project.
+
+## General information
 - contract address in Rinkeby:
 ```0x0```
 - Node version    : v14.15.1
@@ -14,14 +23,6 @@
 ```switch into the ./project directory```
 ```npm install```
 
-# Ethereum Dapp for Tracking Items on a Supply Chain
-The write-up part of this project consists of the following elements:
-- UML diagrams
-- Libraries
-- IPFS
-
-**Disclaimer:**
-In order to focus on the asks, I will not include steps in the different implementations that are not explicity requested. For example, If a product could not be validated successfully, it would not progress further down the process chain. The basic assumption is that everything is _just fine_ and that every participant is somehow _pre validated_. Therefore the overall process would not be used in a real world scenario, the way it is implemented for this project.
 
 ## UML Diagrams
 The following diagrams are required:

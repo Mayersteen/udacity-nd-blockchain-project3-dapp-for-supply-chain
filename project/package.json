@@ -1,19 +1,22 @@
 {
   "name": "und-project3",
   "version": "1.0.0",
-  "description": "The write-up part of this project consists of the following elements:\r - UML diagrams\r - Libraries\r - IPFS",
+  "description": "Supply Chain Dapp w/ IPFS",
   "main": "index.js",
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "pk <pkrasam@gmail.com> (https://ipfs.infura.io/ipfs/QmSXiR9Khm3yo1J67nUopvVBxFJ8YGN2fUGZ34Etr3m92x/)",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "lite-server": "2.4.0"
   },
   "directories": {
     "test": "test"
+  },
+  "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
   }
 }

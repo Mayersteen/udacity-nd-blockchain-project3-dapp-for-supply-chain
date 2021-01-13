@@ -1,2 +1,3 @@
 project/.infuraKey
 project/.secret
+node_modules*

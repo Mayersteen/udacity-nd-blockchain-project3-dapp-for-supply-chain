@@ -20,7 +20,7 @@ This diagram illustrates the basic activities and the related actors (swim-lanes
 \
 The _Farmer_ is responsible to grow the plants and the process starts once the coffee beans can be harvested. The first activity is to **harvest** the coffee. Next, several **process**ing steps are executed in order to create the final product. In this example we will abstract all of those steps away and assume that all required steps are encapsulated in a single activity. Now the coffee can be **pack**ed and can be sold (**sell**) to the next actor, who is the _Distributor_.\
 \
-The _Distributor_ **order**s coffee from the _Farmer_ and **distribute**s the goods to the _Retailer_.\
+The _Distributor_ **buys**s coffee from the _Farmer_ and then **ship**s the goods to the _Retailer_.\
 \
 The _Retailer_ gets coffee from the _Distributor_ and puts the goods for sale, so that the _Customer_s can **purchase** the coffee.
 
@@ -44,8 +44,10 @@ The following libraries and versions are used in this project:
 ## IPFS
 
 ## General information
-- steps
-- contract address in Rinkeby
-- node version
-- truffle version
-- web3 version
+- contract address in Rinkeby: 
+- Node version    : v14.15.1
+- Solidity version: ^0.4.24 (solc-js)
+- Truffle version : v5.1.59 (core: 5.1.59)
+- Web3.js version : v1.2.9
+
+## How to use?

@@ -7,10 +7,12 @@ import "../coffeeaccesscontrol/DistributorRole.sol";
 import "../coffeeaccesscontrol/RetailerRole.sol";
 import "../coffeeaccesscontrol/ConsumerRole.sol";
 
-contract SupplyChain {
+contract SupplyChain is Ownable, FarmerRole, DistributorRole, RetailerRole, ConsumerRole {
 
   // Define 'owner'
-  address owner;
+  // CompileError: /E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeecore/Ownable.sol:17:5:
+  // DeclarationError: Identifier already declared.
+  // address owner;
 
   // Define a variable called 'upc' for Universal Product Code (UPC)
   uint  upc;
@@ -70,10 +72,10 @@ contract SupplyChain {
   event Purchased(uint upc);
 
   // Define a modifer that checks to see if msg.sender == owner of the contract
-  modifier onlyOwner() {
-    require(msg.sender == owner, "Modifier: onlyOwner");
-    _;
-  }
+  //modifier onlyOwner() {
+  //  require(msg.sender == owner, "Modifier: onlyOwner");
+  //  _;
+  //}
 
   // Define a modifer that verifies the Caller
   modifier verifyCaller (address _address) {
@@ -147,14 +149,17 @@ contract SupplyChain {
   // and set 'sku' to 1
   // and set 'upc' to 1
   constructor() public payable {
-    owner = msg.sender;
+    // owner = msg.sender;
     sku = 1;
     upc = 1;
   }
 
   // Define a function 'kill' if required
-  function kill() public onlyOwner {
-    selfdestruct(owner);
+  function kill() public {
+    if (msg.sender == owner()) {
+      address ownerAddress = address(uint160(owner()));
+      selfdestruct(ownerAddress);
+    }
   }
 
   // Define a function 'harvestItem' that allows a farmer to mark an item 'Harvested'
@@ -172,19 +177,20 @@ contract SupplyChain {
     // Add the new item as part of Harvest
     items[_upc] = Item({
       sku: sku,
+      upc: _upc,
       ownerID: owner(),
       originFarmerID: _originFarmerID,
       originFarmName: _originFarmName,
       originFarmInformation: _originFarmInformation,
-      originFarmLatitute: _originFarmLatitude,
-      originFarmLongitute: _originFarmLongitude,
+      originFarmLatitude: _originFarmLatitude,
+      originFarmLongitude: _originFarmLongitude,
       productID: sku + _upc,
       productNotes: _productNotes,
       productPrice: 0,
       itemState: State.Harvested,
       distributorID: address(0),
       retailerID: address(0),
-      consumerID: address(0),
+      consumerID: address(0)
     });
 
     // Increment sku
@@ -368,11 +374,11 @@ contract SupplyChain {
   
   itemSKU = items[_upc].sku;
   itemUPC = items[_upc].upc;
-  productID= items[_upc].productID;
-  productNotes= items[_upc].productNotes;
-  productPrice= items[_upc].productPrice;
-  itemState= items[_upc].itemState;
-  distributorID= items[_upc].distributorID;
+  productID = items[_upc].productID;
+  productNotes = items[_upc].productNotes;
+  productPrice = items[_upc].productPrice;
+  itemState = uint(items[_upc].itemState);
+  distributorID = items[_upc].distributorID;
   retailerID = items[_upc].retailerID;
   consumerID = items[_upc].consumerID;
     

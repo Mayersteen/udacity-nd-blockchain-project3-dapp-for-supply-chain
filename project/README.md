@@ -8,14 +8,13 @@ The write-up part of this project consists of the following elements:
 In order to focus on the asks, I will not include steps in the different implementations that are not explicity requested. For example, If a product could not be validated successfully, it would not progress further down the process chain. The basic assumption is that everything is _just fine_ and that every participant is somehow _pre validated_. Therefore the overall process would not be used in a real world scenario, the way it is implemented for this project.
 
 ## General information
-- contract address in Rinkeby:
-```0x0```
-- Node version    : v14.15.1
-- Solidity version: ^0.4.24 (solc-js)
-- Truffle version : v5.1.59 (core: 5.1.59)
-- Web3.js version : v1.2.9
-## How to use?
+- contract address in Rinkeby: ```0x0```
+- Node version    : ```v14.15.1```
+- Solidity version: ```^0.4.24 (solc-js)```
+- Truffle version : ```v5.1.59 (core: 5.1.59)```
+- Web3.js version : ```v1.2.9```
 
+## How to use?
 - Clone this repository
 ```git clone <URL>```
 

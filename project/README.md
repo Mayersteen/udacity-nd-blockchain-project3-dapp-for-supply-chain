@@ -22,7 +22,7 @@ The _Farmer_ is responsible to grow the plants and the process starts once the c
 \
 The _Distributor_ **order**s coffee from the _Farmer_ and **distribute**s the goods to the _Retailer_.\
 \
-The _Retailer_ gets coffee from the _Distributor_ and puts the goods for sale, so that the _Customers_ can **buy** the coffee.
+The _Retailer_ gets coffee from the _Distributor_ and puts the goods for sale, so that the _Customer_s can **purchase** the coffee.
 
 ![](./UML/activity-diagram.png)
 
@@ -42,3 +42,10 @@ The _Retailer_ gets coffee from the _Distributor_ and puts the goods for sale, s
 The following libraries and versions are used in this project:
 
 ## IPFS
+
+## General information
+- steps
+- contract address in Rinkeby
+- node version
+- truffle version
+- web3 version

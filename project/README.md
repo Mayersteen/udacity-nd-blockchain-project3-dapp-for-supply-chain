@@ -44,11 +44,14 @@ Purchased - 0x4fb9c7782be3a3abb8dc50163e7b6b518d85e2c6a9542f777f2eaa8c1bbe6966
 
 - For testing the web UI
 ```
-0) Ensure that metamask is connected to the correct network and that the accounts you want to use for testing are connected.
-1) Add your test wallet address to the different text input fields in <base_directory>/project/index.html, e.g. '<input type="text" id="ownerID" name="ownerID" value="0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b" size="50"><br>'
+0) Ensure that metamask is connected to the correct network and that the accounts you want to use for 
+testing are connected.
+1) Add your test wallet address to the different text input fields in <base_directory>/project/index.html,
+e.g. '<input type="text" id="ownerID" ... value="0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b" ...'
 2) Open a terminal and switch to the <base_directory>/project/src directory
 3) Run 'npm run dev'
-4) A website should open that you can use to interact with the smart contract. If this does not happen, you can find the entpoint on the terminal, e.g. http://127.0.0.1:3000
+4) A website should open that you can use to interact with the smart contract. If this does not happen,
+you can find the entpoint on the terminal, e.g. http://127.0.0.1:3000
 5) Choose a new SKU and progress the asset through the supply chain.
 ```
 

@@ -10,7 +10,7 @@ In order to focus on the asks, I will not include steps in the different impleme
 ## General information
 - Deployment transaction in Rinkeby: ```0xa31abe47e4fe65cec9928c555766954cbb6ecdef11b7d78e69dae7c86adf052f```
 - Contract address in Rinkeby: ```0xD40471bB6cf74fFE2b6172f2e52f8EdB1e3E18Ef```
-- Transation history: \
+- Transation history:
 ```
 Harvested - 0x8c2194f1790f9a6d02beb6a4a4554729edfc4877120d7a6e04f9cd256d32e187
 Processed - 0x4663c5dada36d4aa7473093bf7ae5e3ad5a236aaeafd1e3b835df7f4bc6ba8ff

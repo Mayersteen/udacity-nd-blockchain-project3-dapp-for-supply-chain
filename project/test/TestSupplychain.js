@@ -347,6 +347,7 @@ contract('SupplyChain', function(accounts) {
         const resultBufferOne_distributor = await supplyChain.fetchItemBufferOne.call(upc, {from: distributorID})
         const resultBufferOne_retailer = await supplyChain.fetchItemBufferOne.call(upc, {from: retailerID})
         const resultBufferOne_consumer = await supplyChain.fetchItemBufferOne.call(upc,{from: consumerID})
+        const resultBufferOne_random = await supplyChain.fetchItemBufferOne.call(upc, {from: accounts[9]})
 
         // Verify the result set:
         //   As the function was used in several of the prior tests, I only focus on the basic accessibility from
@@ -355,7 +356,7 @@ contract('SupplyChain', function(accounts) {
         assert.equal(resultBufferOne_distributor[0], sku, 'Error: Invalid item SKU')
         assert.equal(resultBufferOne_retailer[0], sku, 'Error: Invalid item SKU')
         assert.equal(resultBufferOne_consumer[0], sku, 'Error: Invalid item SKU')
-
+        assert.equal(resultBufferOne_random[0], sku, 'Error: Invalid item SKU')
     })
 
     // 10th Test
@@ -363,19 +364,20 @@ contract('SupplyChain', function(accounts) {
         const supplyChain = await SupplyChain.deployed()
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
-        const resultBufferTwo_farmer = await supplyChain.fetchItemBufferOne.call(upc, {from: originFarmerID})
-        const resultBufferTwo_distributor = await supplyChain.fetchItemBufferOne.call(upc, {from: distributorID})
-        const resultBufferTwo_retailer = await supplyChain.fetchItemBufferOne.call(upc, {from: retailerID})
-        const resultBufferTwo_consumer = await supplyChain.fetchItemBufferOne.call(upc,{from: consumerID})
+        const resultBufferTwo_farmer = await supplyChain.fetchItemBufferTwo.call(upc, {from: originFarmerID})
+        const resultBufferTwo_distributor = await supplyChain.fetchItemBufferTwo.call(upc, {from: distributorID})
+        const resultBufferTwo_retailer = await supplyChain.fetchItemBufferTwo.call(upc, {from: retailerID})
+        const resultBufferTwo_consumer = await supplyChain.fetchItemBufferTwo.call(upc,{from: consumerID})
+        const resultBufferTwo_random = await supplyChain.fetchItemBufferTwo.call(upc, {from: accounts[9]})
 
         // Verify the result set:
         //   As the function was used in several of the prior tests, I only focus on the basic accessibility from
         //   different roles and avoid checking all the values.
-        assert.equal(resultBufferTwo_farmer[0], sku, 'Error: Invalid item SKU')
-        assert.equal(resultBufferTwo_distributor[0], sku, 'Error: Invalid item SKU')
-        assert.equal(resultBufferTwo_retailer[0], sku, 'Error: Invalid item SKU')
-        assert.equal(resultBufferTwo_consumer[0], sku, 'Error: Invalid item SKU')
-        
+        assert.equal(resultBufferTwo_farmer[6], distributorID, 'Error: Invalid item SKU')
+        assert.equal(resultBufferTwo_distributor[6], distributorID, 'Error: Invalid item SKU')
+        assert.equal(resultBufferTwo_retailer[6], distributorID, 'Error: Invalid item SKU')
+        assert.equal(resultBufferTwo_consumer[6], distributorID, 'Error: Invalid item SKU')
+        assert.equal(resultBufferTwo_random[6], distributorID, 'Error: Invalid item SKU')
     })
 
 });

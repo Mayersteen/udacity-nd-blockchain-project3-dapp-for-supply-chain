@@ -4,18 +4,18 @@ App = {
     emptyAddress: "0x0000000000000000000000000000000000000000",
     sku: 0,
     upc: 0,
-    metamaskAccountID: "0x0000000000000000000000000000000000000000",
-    ownerID: "0x0000000000000000000000000000000000000000",
-    originFarmerID: "0x0000000000000000000000000000000000000000",
+    metamaskAccountID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
+    ownerID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
+    originFarmerID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
     originFarmName: null,
     originFarmInformation: null,
     originFarmLatitude: null,
     originFarmLongitude: null,
     productNotes: null,
     productPrice: 0,
-    distributorID: "0x0000000000000000000000000000000000000000",
-    retailerID: "0x0000000000000000000000000000000000000000",
-    consumerID: "0x0000000000000000000000000000000000000000",
+    distributorID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
+    retailerID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
+    consumerID: "0xb9b094e2FBa05aed9DEC6A258317171AD3F0e95b",
 
     init: async function () {
         App.readForm();
@@ -168,6 +168,7 @@ App = {
         var processId = parseInt($(event.target).data('id'));
 
         App.contracts.SupplyChain.deployed().then(function(instance) {
+
             return instance.harvestItem(
                 App.upc, 
                 App.metamaskAccountID, 

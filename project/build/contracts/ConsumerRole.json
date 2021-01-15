@@ -74,11 +74,11 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isConsumer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/ConsumerRole.sol\":\"ConsumerRole\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/ConsumerRole.sol\":{\"keccak256\":\"0xa7077d4daa323c7f9750545c5b5f55aac189e94e6faec73a40ab27f6a34bce34\",\"urls\":[\"bzzr://26958cef3663b16ff856aa5b44e64a7556a512decb0c8e33619317bf26cb0877\"]},\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0xe21510b1682b09db6e084f37f3827a41e8cf1d665211f272188ea18a1ba39744\",\"urls\":[\"bzzr://1a0a468468ff1514572ccd790902c7754900ca01df191cd4d713a7a592ef6bd3\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506100293361002e640100000000026401000000009004565b6101e8565b61004f8160006100956401000000000261030a179091906401000000009004565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156100d157600080fd5b6100ea8282610154640100000000026401000000009004565b1515156100f657600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161415151561019157600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610495806101f76000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063112940f91461005c57806361e6982d1461009f578063834ff739146100b6575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610111565b005b3480156100ab57600080fd5b506100b461019a565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101a5565b604051808215151515815260200191505060405180910390f35b61011a336101a5565b151561018e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f43616c6c6572206973206e6f74206120636f6e73756d6572210000000000000081525060200191505060405180910390fd5b610197816101c2565b50565b6101a33361021c565b565b60006101bb82600061027690919063ffffffff16565b9050919050565b6101d681600061030a90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b6102308160006103ba90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f09860405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141515156102b357600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561034657600080fd5b6103508282610276565b15151561035c57600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103f657600080fd5b6104008282610276565b151561040b57600080fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a723058205ff5e1c4d4c0151a6804679530c56fda236bdac76ed87a66fee18f19eb924e230029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063112940f91461005c57806361e6982d1461009f578063834ff739146100b6575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610111565b005b3480156100ab57600080fd5b506100b461019a565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101a5565b604051808215151515815260200191505060405180910390f35b61011a336101a5565b151561018e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f43616c6c6572206973206e6f74206120636f6e73756d6572210000000000000081525060200191505060405180910390fd5b610197816101c2565b50565b6101a33361021c565b565b60006101bb82600061027690919063ffffffff16565b9050919050565b6101d681600061030a90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b6102308160006103ba90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f09860405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141515156102b357600080fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561034657600080fd5b6103508282610276565b15151561035c57600080fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156103f657600080fd5b6104008282610276565b151561040b57600080fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a723058205ff5e1c4d4c0151a6804679530c56fda236bdac76ed87a66fee18f19eb924e230029",
-  "sourceMap": "156:1549:1:-;;;572:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;572:56:1;599:24;612:10;599:12;;;:24;;;:::i;:::-;156:1549;;1364:114;1418:22;1432:7;1418:9;:13;;;;;;:22;;;;;:::i;:::-;1465:7;1451:22;;;;;;;;;;;;1364:114;:::o;244:167:5:-;335:1;316:21;;:7;:21;;;;308:30;;;;;;;;353:18;357:4;363:7;353:3;;;:18;;;:::i;:::-;352:19;344:28;;;;;;;;402:4;379;:11;;:20;391:7;379:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;244:167;;:::o;725:166::-;809:4;850:1;831:21;;:7;:21;;;;823:30;;;;;;;;866:4;:11;;:20;878:7;866:20;;;;;;;;;;;;;;;;;;;;;;;;;859:27;;725:166;;;;:::o;156:1549:1:-;;;;;;;",
-  "deployedSourceMap": "156:1549:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1039:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1039:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;1197:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1197:73:1;;;;;;874:104;;8:9:-1;5:2;;;30:1;27;20:12;5:2;874:104:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1039:90;751:22;762:10;751;:22::i;:::-;743:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1103:21;1116:7;1103:12;:21::i;:::-;1039:90;:::o;1197:73::-;1238:27;1254:10;1238:15;:27::i;:::-;1197:73::o;874:104::-;932:4;951:22;965:7;951:9;:13;;:22;;;;:::i;:::-;944:29;;874:104;;;:::o;1364:114::-;1418:22;1432:7;1418:9;:13;;:22;;;;:::i;:::-;1465:7;1451:22;;;;;;;;;;;;1364:114;:::o;1581:122::-;1638:25;1655:7;1638:9;:16;;:25;;;;:::i;:::-;1690:7;1674:24;;;;;;;;;;;;1581:122;:::o;725:166:5:-;809:4;850:1;831:21;;:7;:21;;;;823:30;;;;;;;;866:4;:11;;:20;878:7;866:20;;;;;;;;;;;;;;;;;;;;;;;;;859:27;;725:166;;;;:::o;244:167::-;335:1;316:21;;:7;:21;;;;308:30;;;;;;;;353:18;357:4;363:7;353:3;:18::i;:::-;352:19;344:28;;;;;;;;402:4;379;:11;;:20;391:7;379:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;244:167;;:::o;477:170::-;571:1;552:21;;:7;:21;;;;544:30;;;;;;;;588:18;592:4;598:7;588:3;:18::i;:::-;580:27;;;;;;;;637:5;614:4;:11;;:20;626:7;614:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;477:170;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceConsumer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isConsumer\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"ConsumerRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/ConsumerRole.sol\":\"ConsumerRole\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/ConsumerRole.sol\":{\"keccak256\":\"0xa7077d4daa323c7f9750545c5b5f55aac189e94e6faec73a40ab27f6a34bce34\",\"urls\":[\"bzzr://26958cef3663b16ff856aa5b44e64a7556a512decb0c8e33619317bf26cb0877\"]},\"/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/Roles.sol\":{\"keccak256\":\"0x5dfeb8341bfcbba2ca22a064dbc196b3b9cc44438766830fb8fbed4879424ff0\",\"urls\":[\"bzzr://ba1b0d9d98292add25aedea023f0f43c2b6ee6938837628322ef8eaa60cf3ae9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506100293361002e640100000000026401000000009004565b610323565b61004f81600061009564010000000002610373179091906401000000009004565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561013a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b6101538282610226640100000000026401000000009004565b1515156101c8576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4163636f756e7420616c7265616479206861732074686520726f6c650000000081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141515156102cc576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6106c8806103326000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063112940f91461005c57806361e6982d1461009f578063834ff739146100b6575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610111565b005b3480156100ab57600080fd5b506100b461019a565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101a5565b604051808215151515815260200191505060405180910390f35b61011a336101a5565b151561018e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f43616c6c6572206973206e6f74206120636f6e73756d6572210000000000000081525060200191505060405180910390fd5b610197816101c2565b50565b6101a33361021c565b565b60006101bb82600061027690919063ffffffff16565b9050919050565b6101d681600061037390919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b6102308160006104f590919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f09860405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161415151561031c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610418576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b6104228282610276565b151515610497576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4163636f756e7420616c7265616479206861732074686520726f6c650000000081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561059a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b6105a48282610276565b151561063e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260348152602001807f4163636f756e74206d7573742068617665207468652074686520726f6c65206981526020017f6e206f7264657220746f2072656d6f766520697400000000000000000000000081525060400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a723058200b3a0cec20deea18a58eec7351d872523b1f15f9a296a7f9a7c425a4e04dddb10029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063112940f91461005c57806361e6982d1461009f578063834ff739146100b6575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610111565b005b3480156100ab57600080fd5b506100b461019a565b005b3480156100c257600080fd5b506100f7600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101a5565b604051808215151515815260200191505060405180910390f35b61011a336101a5565b151561018e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260198152602001807f43616c6c6572206973206e6f74206120636f6e73756d6572210000000000000081525060200191505060405180910390fd5b610197816101c2565b50565b6101a33361021c565b565b60006101bb82600061027690919063ffffffff16565b9050919050565b6101d681600061037390919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee0714260405160405180910390a250565b6102308160006104f590919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f09860405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff161415151561031c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151515610418576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b6104228282610276565b151515610497576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601c8152602001807f4163636f756e7420616c7265616479206861732074686520726f6c650000000081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff161415151561059a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f43616e6e6f742062652063616c6c65642077697468206164647265737328302981525060200191505060405180910390fd5b6105a48282610276565b151561063e576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260348152602001807f4163636f756e74206d7573742068617665207468652074686520726f6c65206981526020017f6e206f7264657220746f2072656d6f766520697400000000000000000000000081525060400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a723058200b3a0cec20deea18a58eec7351d872523b1f15f9a296a7f9a7c425a4e04dddb10029",
+  "sourceMap": "156:1549:1:-;;;572:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;572:56:1;599:24;612:10;599:12;;;:24;;;:::i;:::-;156:1549;;1364:114;1418:22;1432:7;1418:9;:13;;;;;;:22;;;;;:::i;:::-;1465:7;1451:22;;;;;;;;;;;;1364:114;:::o;244:235:5:-;335:1;316:21;;:7;:21;;;;308:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;389:18;393:4;399:7;389:3;;;:18;;;:::i;:::-;388:19;380:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:4;447;:11;;:20;459:7;447:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;244:235;;:::o;885:202::-;969:4;1010:1;991:21;;:7;:21;;;;983:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1062:4;:11;;:20;1074:7;1062:20;;;;;;;;;;;;;;;;;;;;;;;;;1055:27;;885:202;;;;:::o;156:1549:1:-;;;;;;;",
+  "deployedSourceMap": "156:1549:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1039:90;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1039:90:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;1197:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1197:73:1;;;;;;874:104;;8:9:-1;5:2;;;30:1;27;20:12;5:2;874:104:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1039:90;751:22;762:10;751;:22::i;:::-;743:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1103:21;1116:7;1103:12;:21::i;:::-;1039:90;:::o;1197:73::-;1238:27;1254:10;1238:15;:27::i;:::-;1197:73::o;874:104::-;932:4;951:22;965:7;951:9;:13;;:22;;;;:::i;:::-;944:29;;874:104;;;:::o;1364:114::-;1418:22;1432:7;1418:9;:13;;:22;;;;:::i;:::-;1465:7;1451:22;;;;;;;;;;;;1364:114;:::o;1581:122::-;1638:25;1655:7;1638:9;:16;;:25;;;;:::i;:::-;1690:7;1674:24;;;;;;;;;;;;1581:122;:::o;885:202:5:-;969:4;1010:1;991:21;;:7;:21;;;;983:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1062:4;:11;;:20;1074:7;1062:20;;;;;;;;;;;;;;;;;;;;;;;;;1055:27;;885:202;;;;:::o;244:235::-;335:1;316:21;;:7;:21;;;;308:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;389:18;393:4;399:7;389:3;:18::i;:::-;388:19;380:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;470:4;447;:11;;:20;459:7;447:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;244:235;;:::o;545:262::-;639:1;620:21;;:7;:21;;;;612:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;692:18;696:4;702:7;692:3;:18::i;:::-;684:83;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;797:5;774:4;:11;;:20;786:7;774:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;545:262;;:::o",
   "source": "pragma solidity ^0.4.24;\n\n// Import the library 'Roles'\nimport \"./Roles.sol\";\n\n// Define a contract 'ConsumerRole' to manage this role - add, remove, check\ncontract ConsumerRole {\n  using Roles for Roles.Role;\n\n  // Define 2 events, one for Adding, and other for Removing\n  event ConsumerAdded(address indexed account);\n  event ConsumerRemoved(address indexed account);\n\n  // Define a struct 'consumers' by inheriting from 'Roles' library, struct Role\n  Roles.Role private consumers;\n\n  // In the constructor make the address that deploys this contract the 1st consumer\n  constructor() public {\n    _addConsumer(msg.sender);\n  }\n\n  // Define a modifier that checks to see if msg.sender has the appropriate role\n  modifier onlyConsumer() {\n    require(isConsumer(msg.sender), \"Caller is not a consumer!\");\n    _;\n  }\n\n  // Define a function 'isConsumer' to check this role\n  function isConsumer(address account) public view returns (bool) {\n    return consumers.has(account);\n  }\n\n  // Define a function 'addConsumer' that adds this role\n  function addConsumer(address account) public onlyConsumer {\n    _addConsumer(account);\n  }\n\n  // Define a function 'renounceConsumer' to renounce this role\n  function renounceConsumer() public {\n    _removeConsumer(msg.sender);\n  }\n\n  // Define an internal function '_addConsumer' to add this role, called by 'addConsumer'\n  function _addConsumer(address account) internal {\n    consumers.add(account);\n    emit ConsumerAdded(account);\n  }\n\n  // Define an internal function '_removeConsumer' to remove this role, called by 'removeConsumer'\n  function _removeConsumer(address account) internal {\n    consumers.remove(account);\n    emit ConsumerRemoved(account);\n  }\n}",
   "sourcePath": "E:\\git-repositories\\bitcoin-nanodegree-projects\\und-project3\\project\\contracts\\coffeeaccesscontrol\\ConsumerRole.sol",
   "ast": {
@@ -108,7 +108,7 @@
         "id": 59,
         "nodeType": "ImportDirective",
         "scope": 161,
-        "sourceUnit": 566,
+        "sourceUnit": 572,
         "src": "56:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -133,10 +133,10 @@
               "id": 60,
               "name": "Roles",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 565,
+              "referencedDeclaration": 571,
               "src": "188:5:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Roles_$565",
+                "typeIdentifier": "t_contract$_Roles_$571",
                 "typeString": "library Roles"
               }
             },
@@ -147,10 +147,10 @@
               "id": 61,
               "name": "Roles.Role",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 478,
+              "referencedDeclaration": 479,
               "src": "198:10:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Role_$478_storage_ptr",
+                "typeIdentifier": "t_struct$_Role_$479_storage_ptr",
                 "typeString": "struct Roles.Role"
               }
             }
@@ -249,7 +249,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_struct$_Role_$478_storage",
+              "typeIdentifier": "t_struct$_Role_$479_storage",
               "typeString": "struct Roles.Role"
             },
             "typeName": {
@@ -257,10 +257,10 @@
               "id": 71,
               "name": "Roles.Role",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 478,
+              "referencedDeclaration": 479,
               "src": "454:10:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_Role_$478_storage_ptr",
+                "typeIdentifier": "t_struct$_Role_$479_storage_ptr",
                 "typeString": "struct Roles.Role"
               }
             },
@@ -285,7 +285,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1536,
+                          "referencedDeclaration": 1542,
                           "src": "612:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -393,7 +393,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1536,
+                              "referencedDeclaration": 1542,
                               "src": "762:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -481,10 +481,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1539,
-                        1540
+                        1545,
+                        1546
                       ],
-                      "referencedDeclaration": 1540,
+                      "referencedDeclaration": 1546,
                       "src": "743:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -569,7 +569,7 @@
                         "referencedDeclaration": 72,
                         "src": "951:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Role_$478_storage",
+                          "typeIdentifier": "t_struct$_Role_$479_storage",
                           "typeString": "struct Roles.Role storage ref"
                         }
                       },
@@ -580,10 +580,10 @@
                       "lValueRequested": false,
                       "memberName": "has",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 564,
+                      "referencedDeclaration": 570,
                       "src": "951:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_view$_t_struct$_Role_$478_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Role_$478_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_view$_t_struct$_Role_$479_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Role_$479_storage_ptr_$",
                         "typeString": "function (struct Roles.Role storage pointer,address) view returns (bool)"
                       }
                     },
@@ -843,7 +843,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1536,
+                          "referencedDeclaration": 1542,
                           "src": "1254:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -970,7 +970,7 @@
                         "referencedDeclaration": 72,
                         "src": "1418:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Role_$478_storage",
+                          "typeIdentifier": "t_struct$_Role_$479_storage",
                           "typeString": "struct Roles.Role storage ref"
                         }
                       },
@@ -981,10 +981,10 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 510,
+                      "referencedDeclaration": 513,
                       "src": "1418:13:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$478_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$478_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$479_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$479_storage_ptr_$",
                         "typeString": "function (struct Roles.Role storage pointer,address)"
                       }
                     },
@@ -1156,7 +1156,7 @@
                         "referencedDeclaration": 72,
                         "src": "1638:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Role_$478_storage",
+                          "typeIdentifier": "t_struct$_Role_$479_storage",
                           "typeString": "struct Roles.Role storage ref"
                         }
                       },
@@ -1167,10 +1167,10 @@
                       "lValueRequested": false,
                       "memberName": "remove",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 541,
+                      "referencedDeclaration": 546,
                       "src": "1638:16:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$478_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$478_storage_ptr_$",
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$479_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$479_storage_ptr_$",
                         "typeString": "function (struct Roles.Role storage pointer,address)"
                       }
                     },
@@ -1334,7 +1334,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 566,
+          "SourceUnit": 572,
           "absolutePath": "/E/git-repositories/bitcoin-nanodegree-projects/und-project3/project/contracts/coffeeaccesscontrol/Roles.sol",
           "file": "./Roles.sol",
           "scope": 161,
@@ -1371,7 +1371,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Roles",
-                  "referencedDeclaration": 565,
+                  "referencedDeclaration": 571,
                   "type": "library Roles"
                 },
                 "id": 60,
@@ -1382,7 +1382,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Roles.Role",
-                  "referencedDeclaration": 478,
+                  "referencedDeclaration": 479,
                   "type": "struct Roles.Role"
                 },
                 "id": 61,
@@ -1502,7 +1502,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "Roles.Role",
-                  "referencedDeclaration": 478,
+                  "referencedDeclaration": 479,
                   "type": "struct Roles.Role"
                 },
                 "id": 71,
@@ -1609,7 +1609,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1536,
+                                  "referencedDeclaration": 1542,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1692,10 +1692,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1539,
-                                1540
+                                1545,
+                                1546
                               ],
-                              "referencedDeclaration": 1540,
+                              "referencedDeclaration": 1546,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -1755,7 +1755,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 1536,
+                                      "referencedDeclaration": 1542,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -1933,7 +1933,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "has",
-                              "referencedDeclaration": 564,
+                              "referencedDeclaration": 570,
                               "type": "function (struct Roles.Role storage pointer,address) view returns (bool)"
                             },
                             "children": [
@@ -2239,7 +2239,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1536,
+                                  "referencedDeclaration": 1542,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -2365,7 +2365,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "add",
-                              "referencedDeclaration": 510,
+                              "referencedDeclaration": 513,
                               "type": "function (struct Roles.Role storage pointer,address)"
                             },
                             "children": [
@@ -2575,7 +2575,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "remove",
-                              "referencedDeclaration": 541,
+                              "referencedDeclaration": 546,
                               "type": "function (struct Roles.Role storage pointer,address)"
                             },
                             "children": [
@@ -2707,6 +2707,37 @@
     "version": "0.4.26+commit.4563c3fc.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerAdded",
+          "type": "event"
+        },
+        "0xe3f5ed5f263f1f01764a96edfc7d025f511ec5f7d180e8816908b78bcf74f098": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "ConsumerRemoved",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x2D925563aC5832C17fde751F5A85Aa782178aBCD",
+      "transactionHash": "0x10efa43bc8f6562345cdefd9df767ed042c93f58ec86ce58bc0752bff6f580bb"
+    },
     "5777": {
       "events": {
         "0x28b26e7a3d20aedbc5f8f2ebf7da671c0491723a2b78f47a097b0e46dee07142": {
@@ -2735,12 +2766,13 @@
         }
       },
       "links": {},
-      "address": "0x5D3436a8AaB2F447155Fe7E89a2eD27dB67D3a33",
-      "transactionHash": "0xae4216130afc9818e63d1c6eae5ccac46f18ef0714504247a596c0ae125a4e3c"
+      "address": "0x485678A13bFC3c467F54E4159a41354f19BDC503",
+      "transactionHash": "0x1ab9bfaee8be0e525f16b12a1ca13706682a438d3c70e33fc163bebf15d63ba9"
     }
   },
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-15T16:46:21.496Z",
+  "updatedAt": "2021-01-15T21:18:43.208Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
